@@ -1,10 +1,10 @@
 # HiveOS Custom Miner Integration
 
-Tested on [AMD cards only](#Notes).
+Tested on [AMD cards only](#notes).
 
 ## Quick Option
 
-This method is not recommended [(see disclaimer)](#Disclaimer), but provided as a convenience.  I recommend following the [instructions below to compile](#Better-Option) the miner yourself.
+This method is not recommended [(see disclaimer)](#disclaimer), but provided as a convenience.  I recommend following the [instructions below to compile](#better-option---compile-from-source) the miner yourself.
 
 - In HiveOS dashboard create new Wallet
 - Select **Custom** option for miner
@@ -19,7 +19,7 @@ This method is not recommended [(see disclaimer)](#Disclaimer), but provided as 
 
 ## Better Option - Compile From Source
 
-- Login to shell to your HiveOS miner
+- Login to shell of your HiveOS miner
 
 - Run these commands:
 
@@ -36,11 +36,20 @@ mkdir /hive/custom/bittube
 cp build/bin/* /hive/custom/bittube
 
 ```
+Now that you have a compiled binary, you just need to add the HiveOS [custom files](https://github.com/bizlift/bittube-miner-hive/archive/master.zip).
+
+Copy the following files to `/hive/custom/bittube`:
+- bittube.conf
+- config.txt
+- cpu.txt
+- expert.json
+
+Follow the steps above in [Quick Option](#quick-option) to setup your custom wallet. Skip the **Installation URL** field as it has been installed manually.
 
 
 ## Notes
 
-Please edit `amd.txt` manually. The Custom Miner feature does not have extra fields for storing card data like they do with their own xmr-stak miner.
+Please edit `amd.txt` manually. The HiveOS Custom Miner feature does not have extra fields for card config like they do with their own xmr-stak miner.
 
 Tested on AMD only.  I don't have access to NVIDIA cards and am CUDA illiterate.
 
