@@ -8,7 +8,7 @@ This method is not recommended [(see disclaimer)](#disclaimer), but provided as 
 
 - In HiveOS dashboard create new Wallet
 - Select **Custom** option for miner
-- **Custom miner name**: Enter a name to identify this wallet config (i.e. TUBE Official Pool)
+- **Custom miner name**: bittube
 - **Installation URL**: https://github.com/bizlift/bittube-miner-hive/releases/download/v0.1.0/bittube-2.0.0.1.tar.gz
 - **Wallet and worker template**: Paste your wallet address here.  On Cryptoknight pool you can also append wallet with a dot and [static diff](https://cryptoknight.cc/ipbc/#getting_started)
 - **Pool URL**: Enter pool address:port (i.e. `mining.bit.tube:15555`)
