@@ -12,7 +12,7 @@ This method is not recommended [(see disclaimer)](#disclaimer), but provided as 
 - **Installation URL**: https://github.com/bizlift/bittube-miner-hive/releases/download/v0.1.0/bittube-2.0.0.1.tar.gz
 - **Wallet and worker template**: Paste your wallet address here.  On Cryptoknight pool you can also append wallet with a dot and [static diff](https://cryptoknight.cc/ipbc/#getting_started)
 - **Pool URL**: Enter pool address:port (i.e. `mining.bit.tube:15555`)
-- **Extra config arguments**: Optional runtime configs (i.e. `--noAMDCache`)
+- **Extra config arguments**: Optional runtime configs (i.e. `--noAMDCache` or `--noNVIDIA --openCLVendor NVIDIA`)
 - Save wallet.  Set rig to use Custom miner and the new wallet you created
 - After successful run with Hashrate & Results showing up in Hive dashboard, login to miner shell and edit `/hive/custom/bittube/amd.txt` to tweak your AMD card config (i.e. double thread each card, adjust intensity, etc.).  Restart miner for changes to take effect.
 
