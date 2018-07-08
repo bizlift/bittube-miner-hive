@@ -38,11 +38,15 @@ cp build/bin/* /hive/custom/bittube
 ```
 Now that you have a compiled binary, you just need to add the HiveOS [custom files](https://github.com/bizlift/bittube-miner-hive/archive/master.zip).
 
-Copy the following files to `/hive/custom/bittube`:
+Copy the files to `/hive/custom/bittube`:
 - bittube.conf
 - config.txt
 - cpu.txt
 - expert.json
+- h-config.sh
+- h-manifest.conf
+- h-run.sh
+- h-stats.sh
 
 Follow the steps above in [Quick Option](#quick-option) to setup your custom wallet. Skip the **Installation URL** field as it has been installed manually.
 
