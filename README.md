@@ -2,7 +2,7 @@
 
 Tested on [AMD cards only](#notes).
 
-Check out the installation walkthrough [video](http://bit.ly/HiveTube) for details & tips.
+Check out the tutorial [video](http://bit.ly/HiveTube) for details & tips.
 
 ## Quick Option
 
