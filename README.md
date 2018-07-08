@@ -2,6 +2,8 @@
 
 Tested on [AMD cards only](#notes).
 
+Check out the installation walkthrough [video](http://bit.ly/HiveTube) for details & tips.
+
 ## Quick Option
 
 This method is not recommended [(see disclaimer)](#disclaimer), but provided as a convenience.  I recommend following the [instructions below to compile](#better-option---compile-from-source) the miner yourself.
@@ -30,7 +32,7 @@ cd /hive/custom/bittube-git
 git clone https://github.com/ipbc-dev/bittube-miner.git
 mkdir bittube-miner/build
 cd bittube-miner/build
-cmake .. -DCUDA_ENABLE=OFF -DOpenCL_INCLUDE_DIR=/opt/amdgpu-pro/lib/x86_64-linux-gnu -DOpenCL_LIBRARY=/opt/amdgpu-pro/lib/x86_64-linux-gnu/libOpenCL.so
+cmake ..
 make install
 mkdir /hive/custom/bittube
 cp build/bin/* /hive/custom/bittube
@@ -47,6 +49,7 @@ Copy the files to `/hive/custom/bittube`:
 - h-manifest.conf
 - h-run.sh
 - h-stats.sh
+- pools.txt
 
 Follow the steps above in [Quick Option](#quick-option) to setup your custom wallet. Skip the **Installation URL** field as it has been installed manually.
 
