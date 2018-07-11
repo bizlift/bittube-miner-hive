@@ -32,7 +32,7 @@ cd /hive/custom/bittube-git
 git clone https://github.com/ipbc-dev/bittube-miner.git
 mkdir bittube-miner/build
 cd bittube-miner/build
-cmake ..
+-cmake .. -DCUDA_ENABLE=OFF -DOpenCL_INCLUDE_DIR=/opt/amdgpu-pro/lib/x86_64-linux-gnu -DOpenCL_LIBRARY=/opt/amdgpu-pro/lib/x86_64-linux-gnu/libOpenCL.so
 make install
 mkdir /hive/custom/bittube
 cp build/bin/* /hive/custom/bittube
